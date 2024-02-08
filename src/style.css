@@ -933,6 +933,15 @@ footer ion-icon{
   }
 }
 
+@media (max-width: 425px) {
+  header .inner-div h1{
+    font-size: 24px;
+  }
+  header .inner-div a{
+    padding: 28px 20px;
+  }
+}
+
 @media (max-width: 400px) {
   .slider{
     .center{

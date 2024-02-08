@@ -52,3 +52,11 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+let phone = document.querySelector("#phone")
+let maskOptions = {
+  mask: '+7(000)000-00-00',
+  lazy: true
+} 
+let mask = new IMask(phone, maskOptions);
+
