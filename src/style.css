@@ -1,0 +1,942 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+button, button:hover, button:focus, button:active, button:visited{
+  outline: 0 none !important;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  width: 100%;
+  background-color: #2D3031;
+  font-family: 'Jura', sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;      
+}
+body::-webkit-scrollbar-track {
+  background: #D9D9D9;  
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(41, 44, 45, 1);    
+  border-radius: 20px;    
+  border: 1px solid #A6A6A6; 
+}
+
+main{
+  display: block;
+  justify-content: center;
+}
+
+header{
+  width: 100%;
+  position: sticky;
+  top:0px;
+  background-color: #2D3031;
+  z-index: 999;
+  box-shadow: 0em 0.4em 5px rgba(41, 44, 45, 0.5);
+  overflow: hidden;
+  transition: .2s;
+}
+
+header .inner-div{
+  display: flex;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+header .inner-div h1{
+  cursor: pointer;
+  font-family: 'Keania One', cursive;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+header .inner-div a{
+  margin: 15px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #ddd;
+  transition: .3s;
+}
+
+header .inner-div a:hover{
+  color: #fff;
+}
+
+footer{
+  height: 100px;
+  background-color: #2D3031;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #D9D9D9;
+  font-size: 24px;
+  transition: 0.2s;
+}
+
+footer a:hover{
+  color: #fff;
+}
+
+footer ion-icon{
+  font-size: 40px;
+}
+
+.info-card{
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  z-index: 2;
+}
+
+.left, .right{
+  width: 50%;
+}
+
+.info-card .left{
+  position: relative;
+  padding: 40px 20px;
+  z-index: 4;
+}
+.info-card .right{
+  position: relative;
+  z-index: 3;
+}
+
+.info-card h1{
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.info-card p{
+  font-size: 25px;
+}
+
+.info-card button{
+  font-size: 32px;
+  width: 215px;
+  height: 72px;
+  border-radius: 90px;
+  border: 1px solid #FFF;
+  background: #2D3031;
+  align-items: center;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.info-card button:hover{
+  background: #424242;
+}
+
+.info-card button p{
+  height: 40px;
+  margin: auto;
+  font-size: 32px;
+  font-family: 'Jura', sans-serif;
+  color: #fff;
+}
+
+.photo-boots{
+  position: relative;
+  left: -100px;
+  width: 761.357px;
+  height: 750.97px;
+  transform: rotate(-1.872deg);
+  background-image: url('img/boots1.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.back-line{
+  display: flex;
+  position: relative;
+  width: 107.5vw;
+  height: 700px;
+  transform: rotate(-18deg) skew(-18deg);
+  background-color: #A6A6A6;
+  border: 5px #fff solid; 
+  border-left: 0;
+  border-right: 0;
+  align-items: center;
+  z-index: 1;
+  margin: auto;
+  margin-top: -150px;
+  left:-5vw;
+}
+
+.back-text{
+  position: absolute;
+  left:-220px;
+  font-size: 400px;
+  color:#303435;
+  font-family:  'Keania One', cursive;
+  margin: 0;
+  z-index: 0;
+}
+
+.models{
+  position: relative;
+  width: 100%;
+  height: 360px;
+  max-width: 1300px;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  color: #2D3031;
+  /* transform: rotate(17.146deg); */
+  margin-top: -500px;
+  z-index: 9;
+  .left{
+    width: 60%;
+  }
+  .right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.models h1{
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+  color: #111;
+}
+
+.models p{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px 0;
+  
+}
+
+.slider{
+  display: flex;
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .center{
+    width: calc(100% - 132px);
+    height: 100%;
+    border-radius: 52px;
+    border: 3px solid #2D3031;
+  }
+}
+
+.slider button{
+  padding: 0;
+  width:66px; 
+  height:66px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-but{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-to-odder{
+  margin-top: 200px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.how-to-odder .inner-div{
+  width: 1300px;
+  margin: auto;
+  color: #A6A6A6;
+}
+
+.how-to-odder h1{
+  width: auto;
+  text-align: center;
+  font-size: 60px;
+  color: #A6A6A6;
+  margin-top: -100px;
+}
+
+.how-to-odder p{
+  font-size: 32px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.how-to-odder label{
+  font-size: 32px;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #2D3031;
+}
+
+.form-block{
+  margin-top: 30px;
+}
+
+.how-to-odder input{
+  height: 42px;
+  width: 510px;
+  border-radius: 6px;
+  background: rgba(217, 217, 217, 0.51);
+  font-size: 25px;
+  font-family: 'Jura', sans-serif;
+  font-weight: 900;
+  border: none;
+  padding: 5px 10px;
+}
+
+.how-to-odder button{
+  display: block;
+  width: 160px;
+  height: 45px;
+  border-radius: 40px;
+  border: 2px solid #858687;
+  background: rgba(0, 0, 0, 0.00);
+  margin: 20px 0 0 180px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.how-to-odder button:hover{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.send-btn p{
+  color: #A6A6A6;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Jura', sans-serif;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us{
+  width: 100%;
+  height: 700px;
+  background: #A6A6A6;
+  color: #2D3031;
+  text-align: center;
+  padding: 30px;
+}
+
+.about-us div{
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-us-block{
+  z-index: 10;
+}
+
+.about-us h1{
+  color: #111;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-us p{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.photo-boots-2{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: url(img/boots2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -180px;
+  z-index: 1;
+}
+
+.reviews h1{
+  font-size: 60px;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  color: #A6A6A6;
+}
+
+.reviews{
+  max-width: 1600px;
+  margin: auto;
+  height: 700px;
+}
+
+.slider-2{
+  display: flex;
+
+  .center{
+    width: calc(100% - 200px);
+    height: 500px;
+    margin-left: 100px;
+  }
+}
+
+.slider-2 button{
+  background: none;
+  border: none;
+  width: 100px;
+  height: 100px;
+  color: #A6A6A6;
+}
+
+.review{
+  height: 300px;
+  width: 100%;
+  
+}
+
+.comment{
+  background-color: #A6A6A6;
+  border-radius: 16px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left:20px
+}
+
+.person{
+  font-size: 100px;
+  color: #A6A6A6; 
+  margin-top: -10px;
+}
+
+.star{
+  color: #2D3031;
+  font-size: 30px;
+}
+
+.caret-back{
+  color: #A6A6A6;
+  display: block;
+  transform: rotate(50deg);
+  font-size: 50px;
+  margin-top: -25px;
+  margin-left: 30px;
+}
+
+.questions{
+  background-color: #A6A6A6;
+  color: #2D3031;
+  font-weight: 600;
+  padding: 20px;
+  height: 840px;
+}
+
+.questions .inner-div{
+  max-width: 1300px;
+  margin: auto;
+}
+
+.questions h1{
+  color: #111;
+  font-size: 60px;
+  text-align: center;
+}
+
+.questions h2{
+  color: #111;
+  font-size: 32px;
+}
+
+.questions p{
+  margin-left: 18px;
+  font-size: 24px;
+}
+
+.questions .container{
+  align-items: flex-start;
+}
+
+.nav{
+  display: none;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav hr{
+  position: absolute;
+  color: #fff;
+  width: 40px;
+  border-width: 2px;
+  transition: 0.2s;
+  top:calc(50% - 5px);
+} 
+
+#hr1{
+  transform: translateY(10px);
+}
+#hr3{
+  transform: translateY(-10px);
+}
+
+.close-btn{
+  #hr1{
+    transform: rotate(45deg);
+  }
+  #hr2{
+    transform: translateX(100px);
+    border-color: rgba(0, 0, 0, 0.00);
+  }
+  #hr3{
+    transform:rotate(-45deg);
+  }
+}
+
+.spacer{
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.element-animation{
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+@media (max-width: 1600px) {
+  .back-text{
+    left:0;
+    font-size: 300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .back-text{
+    left:50px;
+    top:100px;
+    font-size: 250px;
+  }
+  .info-card{
+    .left{
+      width: 55%;
+    }
+    .right{
+      width: 45%;
+    }
+  }
+  .photo-boots{
+    top:40px;
+    width: 661.357px;
+    height: 650.97px;
+  }
+  .models{
+    display: block;
+    .left{
+      width: 100%;
+      margin-top:80px
+    }
+    .right{
+      margin: auto;
+      padding: 0 50px;
+      width: 100vw;
+      justify-content: center;
+      margin-top:-540px
+    }
+    .slider{
+      width: 100vw;
+    }
+  }
+  .models h1{
+    font-size: 60px;
+  }
+  .questions{
+    height: 900px;
+    .left{
+      padding: 10px;
+    }
+    .right{
+      padding: 10px;
+    }
+  }
+  .back-line{
+    height: 900px;
+  }
+  .models{
+    margin-top: -650px;
+  }
+  .how-to-odder{
+    margin-top: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .back-text{
+    left:50px;
+    top:100px;
+    font-size: 200px;
+  }
+  header .inner-div a{
+    font-size: 26px;
+  }
+  .how-to-odder{
+    .container{
+      display: block;
+    }
+    .left{
+      width: 100%;
+    }
+    .right{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .info-card{
+    display: block;
+    padding: 20px;
+    .left{
+      width: 100%;
+    }
+    .right{
+      margin-top:-200px;
+      width: 100%;
+    }
+    .photo-boots{
+      margin: auto;
+      top:0;
+      left:0;
+      width: 761.357px;
+      height: 750.97px;
+    }
+  }
+  .slider{
+    .center{
+      width: calc(95% - 150px);
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  
+  .nav{
+    display: block;
+  }
+  .head-links a{
+    display: block;
+  }
+  .head-links{
+    position: absolute;
+    top:100px;
+    width: 100%;
+    left: 0px;
+  }
+  header{
+    top:0;
+    position: fixed;
+    height: 100px;
+  }
+  header .inner-div a{
+    margin: 0;
+    padding: 17px 30px;
+    font-size: 32px;
+    width: 100%;
+    height: 80px;
+  }
+
+  header .inner-div h1{
+    margin: 0;
+  } 
+
+  header .inner-div .head-links a:hover{
+    background-color: rgba(0, 0, 0, 0.10);
+  }
+
+  .questions{
+    height: auto;
+  }
+  .questions .container{
+    display: block;
+    .left{
+      width: 90%;
+      margin: auto;
+    }
+    .right{
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .layer1{
+    margin-top: -300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .back-text{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top:100px;
+    font-size: 150px;
+  }
+  
+  .reviews{
+    height: 600px;
+  }
+  .info-card h1{
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .info-card p{
+    font-size: 20px;
+  }
+  .models h1{
+    font-size: 40px;
+  }
+  .models p{
+    font-size: 20px;
+  }
+  .how-to-odder h1{
+    font-size: 40px;
+  }
+  .how-to-odder p{
+    font-size: 20px;
+  }
+  .how-to-odder label{
+    font-size: 24px;
+  }
+  .how-to-odder input{
+    width: 100%;
+  }
+  .how-to-odder button{
+    margin: 20px auto;
+  }
+  .how-to-odder .right{
+    width: 75%;
+    margin: auto;
+  }
+  .how-to-odder .right div{
+    width: 100%;
+  }
+  .about-us h1{
+    font-size: 40px;
+  }
+  .about-us p{
+    font-size: 20px;
+  }
+  .reviews h1{
+    font-size: 40px;
+  }
+  .reviews p{
+    font-size: 15px;
+  }
+  .questions h1{
+    font-size: 40px;
+  }
+  .questions h2{
+    font-size: 24px;
+  }
+  .questions p{
+    font-size: 20px;
+  }
+  .info-card{
+    .photo-boots{
+      width: 80%;
+      height: 500px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  } 
+  .info-card button{
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .info-card button p{
+    font-size: 25px;
+    margin-top: 7px;
+  }
+  .back-line{
+    height: 800px;
+  }
+  .models{
+    margin-top: -600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .photo-boots-2{
+    width: 100%;
+  }
+  footer p{
+    font-size: 20px;
+  }
+  .how-to-odder{
+    height:500px ;
+  }
+}
+
+@media (max-width: 650px) {
+  .back-text{
+    width: 100vw;
+    font-size: 100px;
+    top:150px
+  }
+  .photo-boots-2{
+    width: 100%;
+  }
+  footer{
+    display: block;
+  }
+  footer a{
+    width: 200px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+  }
+  .models{
+    .right{
+      margin-top: -500px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .back-text{
+    font-size: 70px;
+    top:150px
+  }
+  .info-card{
+    .photo-boots{
+      width: 80%;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  } 
+  .info-card h1{
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .info-card p{
+    font-size: 15px;
+  }
+  .models h1{
+    font-size: 30px;
+  }
+  .models p{
+    font-size: 15px;
+  }
+  .how-to-odder h1{
+    font-size: 30px;
+  }
+  .how-to-odder p{
+    font-size: 15px;
+  }
+  .how-to-odder label{
+    font-size: 20px;
+  }
+  .about-us h1{
+    font-size: 30px;
+  }
+  .about-us p{
+    font-size: 15px;
+  }
+  .reviews h1{
+    font-size: 30px;
+  }
+  .reviews p{
+    font-size: 14px;
+  }
+  .questions h1{
+    font-size: 30px;
+  }
+  .questions h2{
+    font-size: 20px;
+  }
+  .questions p{
+    font-size: 15px;
+  }
+  .about-us{
+    height: 600px;
+  }
+  .star{
+    font-size: 20px;
+  }
+  .person{
+    font-size: 60px;
+    margin-left:20px ;
+  }
+  .reviews{
+    height: 500px;
+  }
+  header .inner-div{
+    padding-left: 0;
+  }
+  .back-line{
+    height: 650px;
+  }
+  .models{
+    margin-top: -520px;
+  }
+  .how-to-odder{
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider{
+    .center{
+      width: calc(95% - 100px);
+    }
+  }
+}
