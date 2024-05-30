@@ -96,14 +96,14 @@
             <p>Чтобы сделать заказ заполните<br> форму заявки, мы с вами<br><b>свяжемся!</b></p>
           </div>
           <div class="right">
-            <form>
+            <form id="form">
               <div class="form-block">
                 <label>Оставьте ваш номер телефона </label>
                 <input placeholder="+7(925)123-45-67" name="phone" id="phone">
               </div>
               <div class="form-block">
                 <label>Напишите ваш ник Instagram</label>
-                <input placeholder="@exaple" name="inst">
+                <input placeholder="@exaple" name="inst" id="link">
               </div>
               <button class="send-btn" type="submit"><p>Отправить</p></button>
             </form>
@@ -293,6 +293,35 @@
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://unpkg.com/imask"></script>
   <script src="src/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script>
+    SmoothScroll({
+      // Время скролла 400 = 0.4 секунды
+      animationTime : 800,
+      // Размер шага в пикселях
+      stepSize : 75,
 
+      // Дополнительные настройки:
+
+      // Ускорение
+      accelerationDelta : 30,
+      // Максимальное ускорение
+      accelerationMax : 2,
+
+      // Поддержка клавиатуры
+      keyboardSupport : true,
+      // Шаг скролла стрелками на клавиатуре в пикселях
+      arrowScroll : 50,
+
+      // Pulse (lаess tweakable)
+      // ratio of "tail" to "acceleration"
+      pulseAlgorithm : true,
+      pulseScale : 4,
+      pulseNormalize : 1,
+
+      // Поддержка тчпада
+      touchpadSupport : true,
+    })
+  </script>
 </body>
 </html>

@@ -54,9 +54,30 @@ for (let elm of elements) {
 }
 
 let phone = document.querySelector("#phone")
+let link = document.querySelector("#link");
 let maskOptions = {
   mask: '+7(000)000-00-00',
   lazy: true
 } 
 let mask = new IMask(phone, maskOptions);
+
+function rebute(){
+  let Phone = phone.value;
+  let Link = link.value;
+  if (Link != "" && Link.substring(0, 1) == "@" && Phone != "" && Phone.length == 16){
+    phone.style.background = "#d9d9d9";
+    link.style.background = "#d9d9d9";
+    alert("Заявка отправлена! Мы скоро свяжемся с Вами!");
+  }else{
+    phone.style.background = "#f7a1a1";
+    link.style.background = "#f7a1a1";
+  }
+}
+
+let form = document.querySelector("#form");
+
+form.addEventListener("submit", function(event){
+  event.preventDefault();
+  rebute();
+});
 
