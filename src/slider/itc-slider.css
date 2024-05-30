@@ -21,7 +21,7 @@
     max-width: 100%;
     user-select: none;
     will-change: transform;
-    height: 360px;
+    /* height: 360px; */
   }
   
   .itc-slider-item:nth-child(1) {

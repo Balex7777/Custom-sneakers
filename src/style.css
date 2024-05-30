@@ -30,7 +30,7 @@ body::-webkit-scrollbar-track {
 }
 body::-webkit-scrollbar-thumb {
   background-color: rgba(41, 44, 45, 1);    
-  border-radius: 20px;    
+  border-radius: 3px;    
   border: 1px solid #A6A6A6; 
 }
 
@@ -268,6 +268,10 @@ footer ion-icon{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.itc-slider-item{
+  height: 360px;
 }
 
 .how-to-odder{
@@ -618,7 +622,7 @@ footer ion-icon{
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   .back-text{
     left:50px;
     top:100px;
@@ -663,9 +667,22 @@ footer ion-icon{
       width: calc(95% - 150px);
     }
   }
+  .how-to-odder input{
+    width: 100%;
+  }
+  .how-to-odder button{
+    margin: 20px auto;
+  }
+  .how-to-odder .right{
+    width: 75%;
+    margin: auto;
+  }
+  .how-to-odder .right div{
+    width: 100%;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   
   .nav{
     display: block;
@@ -755,19 +772,7 @@ footer ion-icon{
   .how-to-odder label{
     font-size: 24px;
   }
-  .how-to-odder input{
-    width: 100%;
-  }
-  .how-to-odder button{
-    margin: 20px auto;
-  }
-  .how-to-odder .right{
-    width: 75%;
-    margin: auto;
-  }
-  .how-to-odder .right div{
-    width: 100%;
-  }
+  
   .about-us h1{
     font-size: 40px;
   }
@@ -835,6 +840,15 @@ footer ion-icon{
   .photo-boots-2{
     width: 100%;
   }
+  .slider .center{
+    height: 250px;
+  }
+  .slider .itc-slider-item{
+    height: 250px;
+  }
+  .models{
+    height: 250px;
+  }
   footer{
     display: block;
   }
@@ -846,7 +860,7 @@ footer ion-icon{
   }
   .models{
     .right{
-      margin-top: -500px;
+      margin-top: -400px;
     }
   }
 }
